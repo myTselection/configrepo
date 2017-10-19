@@ -1,5 +1,17 @@
 ---
 
+spring:
+  profiles: cloud
+
 info:
   description: Company configuration repo
-  message: test
+  message: cloud profile details
+
+---
+
+spring:
+  profiles: test
+
+info:
+  description: Company configuration repo
+  message: test profile details
