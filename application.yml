@@ -8,7 +8,10 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka_username:eureka_password@eureka-server-jocular-dervishhood.cfapps.io/eureka
 
+---
+
 spring:
   profiles: cloud
-    eureka.instance.hostname: ${vcap.application.uris[0]}
-    eureka.instance.nonSecurePort: 80
+eureka.instance:
+  hostname: ${vcap.application.uris[0]}
+  nonSecurePort: 80
